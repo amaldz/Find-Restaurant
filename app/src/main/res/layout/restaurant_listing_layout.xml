@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/gap_md"
+    android:orientation="vertical"
+    android:background="@drawable/bg_corner_radius_white"
+    android:elevation="10dp"
+    android:id="@+id/ll_item">
+
+    <ImageView
+        android:id="@+id/restaurant_img"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/app_icon"/>
+    <TextView
+        android:id="@+id/restaurant_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:text="Resturant Name"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:layout_marginTop="@dimen/gap_md"
+        android:layout_marginBottom="@dimen/gap_md"/>
+
+</LinearLayout>

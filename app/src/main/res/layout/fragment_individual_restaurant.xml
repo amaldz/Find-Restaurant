@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.IndividualRestaurantFragment"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/restaurant_img"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/app_icon"
+        android:scaleType="fitXY"
+        android:background="@drawable/bg_corner_radius_white"
+        android:layout_margin="@dimen/gap_sm"
+        android:elevation="6dp"/>
+
+    <TextView
+        android:id="@+id/restaurant_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Resturant Name"
+        android:textSize="@dimen/font_xl"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/gap_sm"
+        android:layout_marginBottom="@dimen/gap_sm"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <TextView
+        android:id="@+id/restaurant_hours"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Time"
+        android:textSize="@dimen/font_lg"
+        android:layout_marginTop="@dimen/gap_sm"
+        android:layout_marginBottom="@dimen/gap_sm"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <TextView
+        android:id="@+id/restaurant_contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="contact"
+        android:textSize="@dimen/font_lg"
+        android:layout_marginBottom="@dimen/gap_sm"
+        android:textColor="@color/colorPrimaryDark"/>
+
+</LinearLayout>

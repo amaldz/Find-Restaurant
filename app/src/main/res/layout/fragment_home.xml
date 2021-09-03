@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.HomeFragment"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/serach_restaurant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/text_input_bg"
+        android:hint="@string/search_text"
+        android:textColor="@color/colorTextBlackSecondary"
+        android:inputType="text"
+        android:maxLines="1"
+        android:padding="@dimen/gap_md"
+        android:textSize="16sp"
+        android:layout_marginStart="@dimen/gap_lg"
+        android:layout_marginEnd="@dimen/gap_lg"
+        android:layout_marginTop="@dimen/gap_lg"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_restaurant_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/gap_md"/>
+
+</LinearLayout>

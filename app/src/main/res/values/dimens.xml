@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--  Font Sizes  -->
+    <dimen name="font_vsm">6sp</dimen>
+    <dimen name="font_sm">10sp</dimen>
+    <dimen name="font_md">12sp</dimen>
+    <dimen name="font_lg">14sp</dimen>
+    <dimen name="font_xl">18sp</dimen>
+    <dimen name="font_xxl">22sp</dimen>
+    <dimen name="font_xxxl">24sp</dimen>
+
+    <!--  icon-sizes  -->
+    <dimen name="icon_sm">16dp</dimen>
+    <dimen name="icon_md">18dp</dimen>
+    <dimen name="icon_lg">21dp</dimen>
+    <dimen name="icon_xl">24dp</dimen>
+
+    <!--  white-gaps  -->
+    <dimen name="gap_xsm">4dp</dimen>
+    <dimen name="gap_sm">8dp</dimen>
+    <dimen name="gap_md">10dp</dimen>
+    <dimen name="gap_lg">14dp</dimen>
+    <dimen name="gap_xl">18dp</dimen>
+    <dimen name="gap_vsm">16dp</dimen>
+    <dimen name="gap_xs">2dp</dimen>
+    <dimen name="gap_xxs">4dp</dimen>
+    <dimen name="gap_xxl">24dp</dimen>
+    <dimen name="gap_xxxl">44dp</dimen>
+    <dimen name="gap_line">22dp</dimen>
+
+    <dimen name="gap_temp">170dp</dimen> //used in notification settings.
+
+    <!--  other-dimens  -->
+    <dimen name="left_right_margin">56dp</dimen>
+    <dimen name="profile_picture_regular">144dp</dimen>
+    <dimen name="profile_picture_small">112dp</dimen>
+    <dimen name="bottom_nav_height">190dp</dimen>
+    <dimen name="corner_radius">24dp</dimen>
+    <dimen name="badge_count_textsize">10sp</dimen>
+
+
+    <!-- Image Size -->
+    <dimen name="logo_width">300dp</dimen>
+
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    
+    <dimen name="gap_xxl2">32dp</dimen>
+    <dimen name="gap_xxl1">55dp</dimen>
+    <dimen name="gap_xxxl2">105dp</dimen>
+
+    <dimen name="booking_history_image">80dp</dimen>
+    
+    <dimen name="court_text_field">240dp</dimen>
+    <dimen name="ground_booking_card">150dp</dimen>
+    
+    <dimen name="gap_pricing_top">20dp</dimen>
+    <dimen name="gap_pricing_right">40dp</dimen>
+
+    <dimen name="corner_radius_thumbnail">8dp</dimen>
+    <dimen name="gap_72">72dp</dimen>
+    <dimen name="frames_video_height">41dip</dimen>
+
+    <dimen name="gap_67dp">67dp</dimen>
+    <dimen name="gap_xl38dp">38dp</dimen>
+
+</resources>
