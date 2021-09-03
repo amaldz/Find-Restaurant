@@ -4,8 +4,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".fragments.IndividualRestaurantFragment"
-    android:orientation="vertical"
-    android:gravity="center">
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar"/>
 
     <ImageView
         android:id="@+id/restaurant_img"
@@ -29,25 +30,100 @@
         android:layout_marginBottom="@dimen/gap_sm"
         android:textColor="@color/colorPrimaryDark"/>
 
-    <TextView
-        android:id="@+id/restaurant_hours"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="Time"
-        android:textSize="@dimen/font_lg"
-        android:layout_marginTop="@dimen/gap_sm"
-        android:layout_marginBottom="@dimen/gap_sm"
-        android:textColor="@color/colorPrimaryDark"/>
+        android:background="@drawable/bg_corner_radius_white"
+        android:layout_margin="@dimen/gap_lg"
+        android:padding="@dimen/gap_sm"
+        android:elevation="5dp"
+        android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/restaurant_contact"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="contact"
-        android:textSize="@dimen/font_lg"
-        android:layout_marginBottom="@dimen/gap_sm"
-        android:textColor="@color/colorPrimaryDark"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_hours" />
+            <TextView
+                android:id="@+id/restaurant_hours"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Time"
+                android:layout_marginStart="@dimen/gap_md"
+                android:textSize="@dimen/font_lg"
+                android:layout_marginTop="@dimen/gap_sm"
+                android:layout_marginBottom="@dimen/gap_sm"
+                android:textColor="@color/colorPrimaryDark"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_phone" />
+            <TextView
+                android:id="@+id/restaurant_contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="contact"
+                android:layout_marginStart="@dimen/gap_md"
+                android:textSize="@dimen/font_lg"
+                android:layout_marginTop="@dimen/gap_sm"
+                android:layout_marginBottom="@dimen/gap_sm"
+                android:textColor="@color/colorPrimaryDark"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_web" />
+            <TextView
+                android:id="@+id/restaurant_web"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Website"
+                android:layout_marginStart="@dimen/gap_md"
+                android:textSize="@dimen/font_lg"
+                android:layout_marginTop="@dimen/gap_sm"
+                android:layout_marginBottom="@dimen/gap_sm"
+                android:textColor="@color/colorPrimaryDark"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_location" />
+            <TextView
+                android:id="@+id/restaurant_add"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:gravity="center"
+                android:layout_marginStart="@dimen/gap_md"
+                android:textSize="@dimen/font_lg"
+                android:layout_marginTop="@dimen/gap_sm"
+                android:layout_marginBottom="@dimen/gap_sm"
+                android:textColor="@color/colorPrimaryDark"/>
+        </LinearLayout>
+
+    </LinearLayout>
 
 </LinearLayout>

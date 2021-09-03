@@ -36,7 +36,7 @@ public class IndividualRestaurantFragment extends Fragment {
 
     // Widgets
     private ImageView restaurant_img;
-    private TextView restaurant_name,restaurant_hours,restaurant_contact;
+    private TextView restaurant_name,restaurant_hours,restaurant_contact,restaurant_add,restaurant_web;
 
     public IndividualRestaurantFragment() {
         // Required empty public constructor
@@ -80,12 +80,24 @@ public class IndividualRestaurantFragment extends Fragment {
         restaurant_name = rootView.findViewById(R.id.restaurant_name);
         restaurant_hours = rootView.findViewById(R.id.restaurant_hours);
         restaurant_contact = rootView.findViewById(R.id.restaurant_contact);
+        restaurant_web = rootView.findViewById(R.id.restaurant_web);
+        restaurant_add = rootView.findViewById(R.id.restaurant_add);
 
         GlideHelper.setImageUsingGlide(context, RestaurantAdapter.restaurants.get(Integer.parseInt(mParam1)).getRestaurant_img(),restaurant_img);
         restaurant_name.setText(RestaurantAdapter.restaurants.get(Integer.parseInt(mParam1)).getRestaurantName());
         restaurant_hours.setText(RestaurantAdapter.restaurants.get(Integer.parseInt(mParam1)).getHours());
         restaurant_contact.setText(RestaurantAdapter.restaurants.get(Integer.parseInt(mParam1)).getRestaurantPhone());
+        restaurant_web.setText(RestaurantAdapter.restaurants.get(Integer.parseInt(mParam1)).getRestaurantWebsite());
 
+        if (RestaurantAdapter.restaurants.get(Integer.parseInt(mParam1)).getCity().equals("Address Not Available")){
+            restaurant_add.setText(RestaurantAdapter.restaurants.get(Integer.parseInt(mParam1)).getCity());
+        }else {
+            restaurant_add.setText(RestaurantAdapter.restaurants.get(Integer.parseInt(mParam1)).getCity() + ",  " +
+                    RestaurantAdapter.restaurants.get(Integer.parseInt(mParam1)).getFormatted() + ".  " +
+                    RestaurantAdapter.restaurants.get(Integer.parseInt(mParam1)).getStreat() + ",  " +
+                    RestaurantAdapter.restaurants.get(Integer.parseInt(mParam1)).getState() + ",  " +
+                    RestaurantAdapter.restaurants.get(Integer.parseInt(mParam1)).getPostalCode());
+        }
 
         return rootView;
     }

@@ -18,6 +18,7 @@ import android.location.Location;
 import android.location.LocationManager;
 import android.os.Bundle;
 import android.provider.Settings;
+import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.dz.restaurant.R;
@@ -36,14 +37,20 @@ public class MainActivity extends AppCompatActivity{
     private static final int REQUEST_LOCATION = 1;
     private LocationManager locationManager;
 
-    private String Latitude = "";
-    private String Longitude = "";
+    public static String Latitude = "";
+    public static String Longitude = "";
+
+    public static String API_Key = "35613ad686687c148f340c0b13bd6bfa";
+
+    public static ProgressBar progress_bar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         context = getApplicationContext();
+
+        progress_bar = findViewById(R.id.progress_bar);
 
         ActivityCompat.requestPermissions( this, new String[] {Manifest.permission.ACCESS_FINE_LOCATION}, REQUEST_LOCATION);
 
@@ -63,8 +70,6 @@ public class MainActivity extends AppCompatActivity{
             @Override
             public void onPermissionsChecked(MultiplePermissionsReport report) {
                 if (report.areAllPermissionsGranted()) {
-                    Toast.makeText(context, ""+Longitude, Toast.LENGTH_SHORT).show();
-                    Toast.makeText(context, ""+Latitude, Toast.LENGTH_SHORT).show();
                 }
             }
 

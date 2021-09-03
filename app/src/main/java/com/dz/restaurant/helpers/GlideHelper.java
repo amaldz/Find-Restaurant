@@ -26,7 +26,7 @@ public class GlideHelper {
                         int height = imageContainer.getHeight();
 //                        Bitmap image = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888);
 
-                        imageContainer.setImageDrawable(context.getResources().getDrawable(R.drawable.default_img));
+                        imageContainer.setImageDrawable(context.getResources().getDrawable(R.drawable.app_icon_fill));
                         return true;
                     }
 

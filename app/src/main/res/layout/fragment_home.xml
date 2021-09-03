@@ -24,6 +24,16 @@
         android:layout_marginTop="@dimen/gap_lg"
         tools:layout_editor_absoluteX="16dp" />
 
+    <TextView
+        android:id="@+id/restaurant_view_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/font_xl"
+        android:layout_marginTop="@dimen/gap_sm"
+        android:text="Getting Restaurants..."
+        android:gravity="center"/>
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_restaurant_list"
         android:layout_width="match_parent"
